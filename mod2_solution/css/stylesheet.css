@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.__p1{
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+div.__p2{
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+div.__p3{
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+
+h2{
+    float: right;
+    width: 150px;
+    border: 2px solid black;
+    text-align: center;
+    margin-left: 100%;
+}
+
+h2.box_chicken{
+    background-color: aquamarine;
+}
+
+h2.box_beef{
+    background-color: rgb(17, 0, 255);
+}
+
+h2.box_sushi{
+    background-color: rgb(255, 187, 0);
+}
+
+
+p {
+    background-color: gray;
+    padding:10px;
+}
+
+/* 
+ # 할일
+ - 큰화면에 3칼럼
+ - 중간화면에 2칼럼에 1칼럼 꽉차게
+ - 작은 화면 칼럼으로 
+*/
+/* 미디어쿼리 lg */
+@media (max-width:1024px){
+
+}
+
+/* 미디어쿼리 md */
+@media (min-width:600px) and (max-width:1023px){
+    div.__p1{
+        width: 50%;
+    }
+    div.__p2{
+        width: 50%;
+    }
+    div.__p3{
+        width: 100%;
+    }
+}
+
+/* 미디어쿼리 sm */
+@media (max-width:599px){
+    div.__p1{
+        width: 100%;
+    }
+    div.__p2{
+        width: 100%;
+    }
+    div.__p3{
+        width: 100%;
+    }
+}
